@@ -21,7 +21,7 @@ import SwiftUI
 struct RichNotesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RichTextEditorView()
         }
     }
 }
