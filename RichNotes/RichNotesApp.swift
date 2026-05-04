@@ -14,14 +14,16 @@
 //----------------------------------------------
 // Copyright © 2025 CreaTECH Solutions. All rights reserved.
 
-
+import SwiftData
 import SwiftUI
 
 @main
 struct RichNotesApp: App {
     var body: some Scene {
         WindowGroup {
-            RichTextEditorView()
+            NotesView()
+                .modelContainer(for: Category.self)
+                
         }
     }
 }
